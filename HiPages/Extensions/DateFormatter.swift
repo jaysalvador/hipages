@@ -18,4 +18,13 @@ extension DateFormatter {
         
         return dateFormatter
     }()
+    
+    static let monthYear: DateFormatter = {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = .current
+        dateFormatter.dateFormat = "MMM yyyy"
+        
+        return dateFormatter
+    }()
 }

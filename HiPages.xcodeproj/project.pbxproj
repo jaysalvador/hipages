@@ -40,6 +40,10 @@
 		B570231324050A16004386F1 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B570230724050A16004386F1 /* SourceSansPro-Black.ttf */; };
 		B570231424050A16004386F1 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B570230824050A16004386F1 /* SourceSansPro-BoldItalic.ttf */; };
 		B570231524050A16004386F1 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B570230924050A16004386F1 /* SourceSansPro-ExtraLight.ttf */; };
+		B570231724050F53004386F1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570231624050F53004386F1 /* UIView.swift */; };
+		B5702319240510E7004386F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5702318240510E7004386F1 /* UIColor.swift */; };
+		B570231C2405131E004386F1 /* JobTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570231A2405131E004386F1 /* JobTitleCell.swift */; };
+		B570231D2405131E004386F1 /* JobTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B570231B2405131E004386F1 /* JobTitleCell.xib */; };
 		B9F7557FD9699F7BF6CDAE06 /* Pods_HiPages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B595D56985C08057E48D02E /* Pods_HiPages.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +108,10 @@
 		B570230724050A16004386F1 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
 		B570230824050A16004386F1 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
 		B570230924050A16004386F1 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B570231624050F53004386F1 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B5702318240510E7004386F1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		B570231A2405131E004386F1 /* JobTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleCell.swift; sourceTree = "<group>"; };
+		B570231B2405131E004386F1 /* JobTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTitleCell.xib; sourceTree = "<group>"; };
 		C2A496E3526253C4FEC33FF7 /* Pods_HiPagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20A4A344477D705A8DF562A /* Pods-HiPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPages.debug.xcconfig"; path = "Target Support Files/Pods-HiPages/Pods-HiPages.debug.xcconfig"; sourceTree = "<group>"; };
 		FED7CE1BDD434AA78EBFA939 /* Pods-HiPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPages.release.xcconfig"; path = "Target Support Files/Pods-HiPages/Pods-HiPages.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +177,8 @@
 		B503A6D12404FDAB001B008A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B570231A2405131E004386F1 /* JobTitleCell.swift */,
+				B570231B2405131E004386F1 /* JobTitleCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -248,6 +258,8 @@
 				B503A6C52404EC15001B008A /* DispatchQueue.swift */,
 				B503A6C92404EF23001B008A /* URLSession.swift */,
 				B503A6CB2404EFCC001B008A /* DateFormatter.swift */,
+				B570231624050F53004386F1 /* UIView.swift */,
+				B5702318240510E7004386F1 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -415,6 +427,7 @@
 				B570230B24050A16004386F1 /* SourceSansPro-Italic.ttf in Resources */,
 				B570230C24050A16004386F1 /* SourceSansPro-Regular.ttf in Resources */,
 				B570230D24050A16004386F1 /* SourceSansPro-SemiBold.ttf in Resources */,
+				B570231D2405131E004386F1 /* JobTitleCell.xib in Resources */,
 				B570231224050A16004386F1 /* SourceSansPro-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,11 +544,14 @@
 				B503A6C12404BCE4001B008A /* Business.swift in Sources */,
 				B503A6CA2404EF23001B008A /* URLSession.swift in Sources */,
 				B503A6C82404EE69001B008A /* HttpError.swift in Sources */,
+				B5702319240510E7004386F1 /* UIColor.swift in Sources */,
 				B503A6C42404D607001B008A /* HttpClient.swift in Sources */,
 				B503A6BF2404BC2A001B008A /* Job.swift in Sources */,
 				B503A6CE2404F1C4001B008A /* JobClient.swift in Sources */,
+				B570231C2405131E004386F1 /* JobTitleCell.swift in Sources */,
 				B53165C424011ECD00B9257C /* JCollectionViewController.swift in Sources */,
 				B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */,
+				B570231724050F53004386F1 /* UIView.swift in Sources */,
 				B53165C024011E0200B9257C /* TestViewController.swift in Sources */,
 				B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */,
 				B503A6D32404FF20001B008A /* TestViewModel.swift in Sources */,

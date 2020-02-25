@@ -14,6 +14,8 @@ protocol TestViewModelProtocol{
     
     // MARK: - Data
     
+    var jobView: JobStatus { get set }
+    
     var jobs: [Job]? { get }
     
     // MARK: - Callbacks
@@ -34,6 +36,8 @@ class TestViewModel: TestViewModelProtocol {
     private var jobClient: JobClientProtocol?
     
     // MARK: - Data
+    
+    var jobView: JobStatus = .inProgress
     
     private(set) var jobs: [Job]?
     

@@ -14,7 +14,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="HiPages" customModuleProvider="target">
             <connections>
+                <outlet property="closedJobsButton" destination="hQx-id-6OW" id="Oja-bv-szM"/>
+                <outlet property="closedJobsView" destination="cyj-PU-DA6" id="I4b-GC-gIs"/>
                 <outlet property="collectionView" destination="ndf-OB-Cxg" id="Ode-nQ-U3u"/>
+                <outlet property="openJobsButton" destination="aUj-7Z-2FL" id="JYi-yH-dAu"/>
+                <outlet property="openJobsView" destination="NkM-dZ-3Nt" id="G3l-IM-8BV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,8 +34,8 @@
                             <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hipages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os4-KP-7xF">
-                                    <rect key="frame" x="60" y="12" width="53.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="16"/>
+                                    <rect key="frame" x="60" y="9.5" width="67" height="25.5"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="20"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -45,7 +49,7 @@
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apT-eT-tWZ">
                                     <rect key="frame" x="0.0" y="43" width="414" height="1"/>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="2iv-g5-Mze"/>
                                     </constraints>
@@ -79,6 +83,9 @@
                                                     <state key="normal" title="Open Jobs">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="toggleJobs:" destination="-1" eventType="touchUpInside" id="Bnj-C1-g6B"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -99,6 +106,9 @@
                                                     <state key="normal" title="Closed Jobs">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="toggleJobs:" destination="-1" eventType="touchUpInside" id="Wf1-nP-kCe"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -113,7 +123,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="60c-Yj-uD2"/>
                                 <constraint firstAttribute="trailing" secondItem="ETf-Vi-el7" secondAttribute="trailing" id="8MG-ev-Oya"/>
@@ -135,26 +145,30 @@
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="HHC-zb-eSz"/>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-OB-Cxg">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ndf-OB-Cxg">
                     <rect key="frame" x="0.0" y="132" width="414" height="764"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3in-CJ-aRM">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PRv-eS-KxZ"/>
+                        <outlet property="delegate" destination="-1" id="w2y-Cl-XaB"/>
+                    </connections>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="ndf-OB-Cxg" secondAttribute="trailing" id="9x8-Wg-6sg"/>
                 <constraint firstItem="ndf-OB-Cxg" firstAttribute="top" secondItem="tnN-tY-Xpe" secondAttribute="bottom" id="BR1-Sp-r8q"/>
                 <constraint firstAttribute="bottom" secondItem="ndf-OB-Cxg" secondAttribute="bottom" id="X0b-vp-2wl"/>
-                <constraint firstItem="ndf-OB-Cxg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XkV-PN-cfR"/>
+                <constraint firstItem="ndf-OB-Cxg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fOK-Sl-2EK"/>
                 <constraint firstItem="tnN-tY-Xpe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hOz-mE-lt8"/>
                 <constraint firstItem="tnN-tY-Xpe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qIR-Vf-IHb"/>
                 <constraint firstAttribute="trailing" secondItem="tnN-tY-Xpe" secondAttribute="trailing" id="qYh-fA-tVY"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ndf-OB-Cxg" secondAttribute="trailing" id="wun-NT-2X9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>

@@ -50,15 +50,33 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
     
     // MARK: - Sections and items
     
+    @IBOutlet
+    private var openJobsView: UIView?
+    
+    @IBOutlet
+    private var closedJobsView: UIView?
+    
+    @IBOutlet
+    private var openJobsButton: UIButton?
+    
+    @IBOutlet
+    private var closedJobsButton: UIButton?
+    
+    
     override var sectionsAndItems: Array<SectionAndItems> {
         
-        var items = Array<TestItem>()
+        var items = [TestItem]()
+        
+        let jobStatus = self.viewModel?.jobView
         
         self.viewModel?.jobs?.forEach { job in
             
-            items.append(.title(job))
-            items.append(.avatars(job))
-            items.append(.details(job))
+            if jobStatus == job.status {
+                            
+                items.append(.title(job))
+//                items.append(.avatars(job))
+//                items.append(.details(job))
+            }
         }
         
         return [(.single, items)]
@@ -81,12 +99,107 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
         super.init()
         
         self.viewModel = _viewModel
+        
+        self.setupViewModel()
+        
+        self.setupNotifications()
     }
+    
+    // MARK: - Setup
+    
+    private func setupViewModel() {
+        
+        self.viewModel?.onUpdated = { [weak self] in
+            
+            DispatchQueue.main.async {
+
+                self?.updateSectionsAndItems()
+            }
+        }
+    }
+    
+    private func setupNotifications() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(orientationChanged), name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+    
+    override func setupCollectionView() {
+        
+        super.setupCollectionView()
+        
+        self.collectionView?.register(cell: JobTitleCell.self)
+    }
+    
+    private func setupButtonBorders() {
+        
+        self.openJobsView?.setBottomBorder(color: .white, width: 2.0)
+        
+        self.closedJobsView?.setBottomBorder(color: .white, width: 2.0)
+        
+        if self.viewModel?.jobView == .inProgress {
+            
+            self.openJobsView?.setBottomBorder(color: .orange, width: 2.0)
+        }
+        else {
+            
+            self.closedJobsView?.setBottomBorder(color: .orange, width: 2.0)
+        }
+    }
+    
+    // MARK: - View life cycle
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
+        self.toggleJobs(self.viewModel?.jobView == .inProgress ? self.openJobsButton : self.closedJobsButton)
+        
         self.viewModel?.getJobs()
+    }
+    
+    // MARK: - UICollectionViewDataSource & UICollectionViewDelegate
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForSection section: TestSection, item: TestItem, indexPath: IndexPath) -> UICollectionViewCell? {
+        
+        if case .title(let job) = item {
+            
+            if let cell = self.collectionView?.dequeueReusable(cell: JobTitleCell.self, for: indexPath) {
+                
+                return cell.prepare(job: job)
+            }
+        }
+        
+        return nil
+    }
+
+    // MARK: - UICollectionViewDelegateFlowLayout
+    
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForSection section: TestSection, item: TestItem, indexPath: IndexPath) -> CGSize? {
+        
+        return CGSize(width: collectionView.frame.width, height: 112.0)
+    }
+    
+    // MARK: - Actions
+    
+    @objc
+    func orientationChanged() {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(175)) { [weak self] in
+
+            self?.setupButtonBorders()
+            
+            self?.updateSectionsAndItems(forced: true)
+        }
+    }
+    
+    @IBAction func toggleJobs(_ sender: UIButton?) {
+        
+        self.viewModel?.jobView = (sender == self.openJobsButton) ? .inProgress : .closed
+
+        self.setupButtonBorders()
+        
+        // update jobs listing
+        
+        self.updateSectionsAndItems()
     }
 }
