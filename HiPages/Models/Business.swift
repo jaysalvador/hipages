@@ -21,3 +21,16 @@ struct Business: Codable {
         case hired = "isHired"
     }
 }
+
+extension Business: Equatable {
+    
+    static func == (lhs: Business, rhs: Business) -> Bool {
+        
+        guard let lhsId = lhs.id, let rhsId = rhs.id else {
+            
+            return false
+        }
+        
+        return lhsId == rhsId
+    }
+}

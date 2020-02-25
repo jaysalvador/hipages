@@ -23,13 +23,20 @@ enum TestItem: Equatable {
         
         switch (lhs, rhs) {
             
-        case (.title(let lhsJob), .title(let rhsJob)),
-             (.avatars(let lhsJob), .avatars(let rhsJob)),
-             (.details(let lhsJob), .details(let rhsJob)):
+        case (.title(let lhsJob), .title(let rhsJob)):
             
             return lhsJob == rhsJob
+        
+        case (.avatars(let lhsJob), .avatars(let rhsJob)):
+        
+            return lhsJob == rhsJob && lhsJob.connectedBusinesses == rhsJob.connectedBusinesses
+        
+        case (.details(let lhsJob), .details(let rhsJob)):
+            
+            return lhsJob == rhsJob && lhsJob.detailsLink == rhsJob.detailsLink
             
         default:
+            
             return false
         }
     }
