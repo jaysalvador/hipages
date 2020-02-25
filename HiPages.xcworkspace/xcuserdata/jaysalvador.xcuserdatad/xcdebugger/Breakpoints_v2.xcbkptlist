@@ -39,33 +39,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "84654469-2192-47EC-8E2D-39C1EE1B8252"
-            shouldBeEnabled = "No"
+            uuid = "9DD651C8-8B0D-44B2-9BC6-4AD8D8CA5DA7"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HiPages/Models/Job.swift"
+            filePath = "HiPages/Controllers/TestViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "init(from:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "getJobs()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C490541D-7642-4C26-A376-0C5A31982AA3"
+            uuid = "9C884CDC-AFF5-4F64-AA79-CB058F7A77BB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HiPages/Models/Job.swift"
+            filePath = "HiPages/Controllers/TestViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "init(from:)"
-            landmarkType = "7">
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "sectionsAndItems"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

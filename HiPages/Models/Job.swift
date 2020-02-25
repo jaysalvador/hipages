@@ -66,3 +66,16 @@ struct Job: Codable {
         }
     }
 }
+
+extension Job: Equatable {
+    
+    static func == (lhs: Job, rhs: Job) -> Bool {
+        
+        guard let lhsId = lhs.id, let rhsId = rhs.id else {
+            
+            return false
+        }
+        
+        return lhsId == rhsId
+    }
+}

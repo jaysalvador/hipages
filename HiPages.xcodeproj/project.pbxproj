@@ -17,6 +17,7 @@
 		B503A6CA2404EF23001B008A /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C92404EF23001B008A /* URLSession.swift */; };
 		B503A6CC2404EFCC001B008A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6CB2404EFCC001B008A /* DateFormatter.swift */; };
 		B503A6CE2404F1C4001B008A /* JobClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6CD2404F1C4001B008A /* JobClient.swift */; };
+		B503A6D32404FF20001B008A /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6D22404FF20001B008A /* TestViewModel.swift */; };
 		B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531658B2400E92B00B9257C /* AppDelegate.swift */; };
 		B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B53165942400E92B00B9257C /* HiPages.xcdatamodeld */; };
 		B53165982400E92C00B9257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53165972400E92C00B9257C /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		B503A6C92404EF23001B008A /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		B503A6CB2404EFCC001B008A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		B503A6CD2404F1C4001B008A /* JobClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobClient.swift; sourceTree = "<group>"; };
+		B503A6D22404FF20001B008A /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 		B53165882400E92B00B9257C /* HiPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531658B2400E92B00B9257C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53165952400E92B00B9257C /* HiPages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HiPages.xcdatamodel; sourceTree = "<group>"; };
@@ -140,6 +142,13 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		B503A6D12404FDAB001B008A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B531657F2400E92B00B9257C = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +178,9 @@
 				B503A6BD2404BC0E001B008A /* Models */,
 				B53165C52401286C00B9257C /* Extensions */,
 				B53165C224011E9000B9257C /* Controllers */,
+				B503A6D12404FDAB001B008A /* Cells */,
 				B53165972400E92C00B9257C /* Assets.xcassets */,
 				B531658B2400E92B00B9257C /* AppDelegate.swift */,
-				B53165BE24011E0200B9257C /* TestViewController.swift */,
-				B53165BF24011E0200B9257C /* TestViewController.xib */,
 				B53165992400E92C00B9257C /* LaunchScreen.storyboard */,
 				B531659C2400E92C00B9257C /* Info.plist */,
 				B53165942400E92B00B9257C /* HiPages.xcdatamodeld */,
@@ -202,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				B53165C324011ECD00B9257C /* JCollectionViewController.swift */,
+				B53165BE24011E0200B9257C /* TestViewController.swift */,
+				B53165BF24011E0200B9257C /* TestViewController.xib */,
+				B503A6D22404FF20001B008A /* TestViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -463,6 +474,7 @@
 				B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */,
 				B53165C024011E0200B9257C /* TestViewController.swift in Sources */,
 				B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */,
+				B503A6D32404FF20001B008A /* TestViewModel.swift in Sources */,
 				B503A6C62404EC15001B008A /* DispatchQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

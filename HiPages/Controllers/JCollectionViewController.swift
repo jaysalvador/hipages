@@ -32,13 +32,6 @@ class JCollectionViewController<Section: Equatable, Item: Equatable>: UIViewCont
     @IBOutlet
     var collectionView: UICollectionView?
     
-    // MARK: - Properties
-    
-    var navigationTitle: String? {
-        
-        return ""
-    }
-    
     // MARK: - Init
     
     required init?(coder aDecoder: NSCoder) {
