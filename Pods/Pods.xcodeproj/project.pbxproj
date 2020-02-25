@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0068C2E9306676EE709453D9C3968503 /* Pods-HiPagesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 312CFE6C7C5CE26F55F0657947959B88 /* Pods-HiPagesTests-dummy.m */; };
+		075164C5A081698A44439CB37AFC9A59 /* Pods-HiPages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B1075D57C70119840573DEA0565AA2 /* Pods-HiPages-dummy.m */; };
+		07714047501DFF783ED40A93B277487E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0B28AF4E12913AC5EEBAF7499182DF0B /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92EF6ECB3B86B047735A48A9FFB8B51 /* AbstractDiffCalculator.swift */; };
+		1ADD9D0AD5F0657B7809864B756BC155 /* SectionedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370554140D3D52C63263F59B51EEC69 /* SectionedValues.swift */; };
+		4452A4C261337D00D753E7E3A12B8506 /* Dwifft+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B091E0526B1DAE13F7D7092710E587 /* Dwifft+AppKit.swift */; };
+		4705193AF4A653994AEBAEB001B677AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5EA789F66A5EB47D0111D6B99B518788 /* Pods-HiPagesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 678E18F1216D3335D894B5770A564A2D /* Pods-HiPagesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69E49A01811CF8FA1FE92981ABB9067F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7D98B888ACA1822CD885AE930EB9F1DA /* Dwifft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 944F8D741C5232523EE2C67EF5E7386F /* Dwifft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894969C74BE3934962FF7FCBBC0BF161 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E42E5D13EB1DB8D9C1B947A5A95DB3 /* Dwifft.swift */; };
+		8F958A757695F959363483AF5B109D64 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADB998F1D7F704CF16A687C090EF6 /* Dwifft+UIKit.swift */; };
+		B5981B13171D3F5B79B062B1D2733350 /* Pods-HiPagesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AF9F1FC8D726AF9290A75E80F5D8A1 /* Pods-HiPagesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B75837B465BBEAAAB8FFC2FC64869FED /* Pods-HiPages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C14E6F86CCA66912B8A827097C5FD28F /* Pods-HiPages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDD54FD8CC76C85FD3BAB6AE7EBE454E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DF3B83C81214CC3290255C922E55DDF1 /* Dwifft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DA662250BE168D94CB327E53EDBB8 /* Dwifft-dummy.m */; };
+		EE227E6891B1A964AA2BB2B16F8D3349 /* Pods-HiPagesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BF43452C6C30EC6C61B19038581C8C /* Pods-HiPagesUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F34A22729339485533DDCBB0C39B841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 051203F781CB0E6EBD90690D6D8E7F63;
+			remoteInfo = "Pods-HiPages";
+		};
+		8730483D806F2960CD869F85EB99F773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 051203F781CB0E6EBD90690D6D8E7F63;
+			remoteInfo = "Pods-HiPages";
+		};
+		CA05FBD918C6ADA29D63FCD9A000CBF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4255A53C9FC46E2A6605D689307219F6;
+			remoteInfo = Dwifft;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084DA662250BE168D94CB327E53EDBB8 /* Dwifft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dwifft-dummy.m"; sourceTree = "<group>"; };
+		10B1075D57C70119840573DEA0565AA2 /* Pods-HiPages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HiPages-dummy.m"; sourceTree = "<group>"; };
+		11C4BE2B63E2ED352283EBEA32EEF2F5 /* Pods-HiPagesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HiPagesTests.modulemap"; sourceTree = "<group>"; };
+		18E42E5D13EB1DB8D9C1B947A5A95DB3 /* Dwifft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dwifft.swift; path = Dwifft/Dwifft.swift; sourceTree = "<group>"; };
+		1DC4C771D5A1646D211AD5A06403F20E /* Pods-HiPagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiPagesTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A6ADB998F1D7F704CF16A687C090EF6 /* Dwifft+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+UIKit.swift"; path = "Dwifft/Dwifft+UIKit.swift"; sourceTree = "<group>"; };
+		312CFE6C7C5CE26F55F0657947959B88 /* Pods-HiPagesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HiPagesTests-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35C9630334F5430CC1BEFD49513E7E4F /* Pods-HiPages-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HiPages-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36A3D2907A50C25220B3A062A9BF461B /* Dwifft-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-prefix.pch"; sourceTree = "<group>"; };
+		3CEBEC8E23E3EF25886A015F8860F9C0 /* Pods_HiPagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B65D9BC17F950A2B0D39AE5A7B94AA /* Pods-HiPagesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiPagesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49BF43452C6C30EC6C61B19038581C8C /* Pods-HiPagesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HiPagesUITests-dummy.m"; sourceTree = "<group>"; };
+		4A897B5E27A5E1B37033B33E55445FDB /* Pods-HiPagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiPagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B23DC32E2678305939BA98D69835D53 /* Pods-HiPagesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiPagesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dwifft.xcconfig; sourceTree = "<group>"; };
+		58DCBC9D5B3134797A105F2D3CC6C22F /* Pods-HiPages-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiPages-acknowledgements.plist"; sourceTree = "<group>"; };
+		678E18F1216D3335D894B5770A564A2D /* Pods-HiPagesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HiPagesUITests-umbrella.h"; sourceTree = "<group>"; };
+		73618B643D95CAF55FC3A83CE68E0090 /* Dwifft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dwifft.modulemap; sourceTree = "<group>"; };
+		7BC7958931CDEDCD98819FBADB0D86F6 /* Pods-HiPagesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HiPagesUITests.modulemap"; sourceTree = "<group>"; };
+		7E59730EF52D44125935B249A6E66079 /* Pods-HiPagesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HiPagesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C1362E003D3801CF49394EFEA7A5C52 /* Pods-HiPages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiPages-Info.plist"; sourceTree = "<group>"; };
+		944F8D741C5232523EE2C67EF5E7386F /* Dwifft-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-umbrella.h"; sourceTree = "<group>"; };
+		9B500C58C220FA5B66EEE83A02F4546D /* Pods_HiPages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6B091E0526B1DAE13F7D7092710E587 /* Dwifft+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+AppKit.swift"; path = "Dwifft/Dwifft+AppKit.swift"; sourceTree = "<group>"; };
+		A92EF6ECB3B86B047735A48A9FFB8B51 /* AbstractDiffCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractDiffCalculator.swift; path = Dwifft/AbstractDiffCalculator.swift; sourceTree = "<group>"; };
+		ADB59354610F17253125233317E3D255 /* Pods-HiPages-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HiPages-frameworks.sh"; sourceTree = "<group>"; };
+		B0A077B2C882A680522E87D1822CE7B7 /* Pods-HiPagesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HiPagesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B370554140D3D52C63263F59B51EEC69 /* SectionedValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedValues.swift; path = Dwifft/SectionedValues.swift; sourceTree = "<group>"; };
+		B5D5D9F0E6B19842B06934C2828A4545 /* Pods-HiPagesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiPagesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C14E6F86CCA66912B8A827097C5FD28F /* Pods-HiPages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HiPages-umbrella.h"; sourceTree = "<group>"; };
+		C6AB0C555B03F08D43F3C109EC84CD81 /* Pods-HiPages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HiPages.modulemap"; sourceTree = "<group>"; };
+		D4AF9F1FC8D726AF9290A75E80F5D8A1 /* Pods-HiPagesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HiPagesTests-umbrella.h"; sourceTree = "<group>"; };
+		D6522EC11E0B98767747D0B33CF84F46 /* Pods-HiPagesUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiPagesUITests-Info.plist"; sourceTree = "<group>"; };
+		D75376C977774B1B79088FA740378C85 /* Pods_HiPagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9636C054688C8351CD86115B00770DF /* Dwifft-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Dwifft-Info.plist"; sourceTree = "<group>"; };
+		E4E3744CA4BDFED8701F9026328C4D9C /* Pods-HiPagesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiPagesTests-Info.plist"; sourceTree = "<group>"; };
+		F048C07B8F5C14C6AE38A228C05443F9 /* Pods-HiPagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiPagesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F859F47CF31FBDAA6109501C72E4DA86 /* Pods-HiPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiPages.debug.xcconfig"; sourceTree = "<group>"; };
+		FC89336AA6B4BFF014C9DE60CFAF1278 /* Pods-HiPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiPages.release.xcconfig"; sourceTree = "<group>"; };
+		FF024DCEACF139617EC596C45282C2F1 /* Dwifft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dwifft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A7105D472BBEAE249BE21C936323981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4705193AF4A653994AEBAEB001B677AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFF38456BEA24070873C7A757E8E10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E49A01811CF8FA1FE92981ABB9067F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC522793324A80C21CF12D8D89A0F451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD54FD8CC76C85FD3BAB6AE7EBE454E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB21E4ED58C66C4D1E87D8FC3BBF707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07714047501DFF783ED40A93B277487E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A208BB7EF4CF5654F26F1A4F4DCF274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C92EEAB2665E935D77571D23EA922394 /* Dwifft */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		419A70EEF9F808B34CDB38AC06AD4475 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73618B643D95CAF55FC3A83CE68E0090 /* Dwifft.modulemap */,
+				4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */,
+				084DA662250BE168D94CB327E53EDBB8 /* Dwifft-dummy.m */,
+				D9636C054688C8351CD86115B00770DF /* Dwifft-Info.plist */,
+				36A3D2907A50C25220B3A062A9BF461B /* Dwifft-prefix.pch */,
+				944F8D741C5232523EE2C67EF5E7386F /* Dwifft-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Dwifft";
+			sourceTree = "<group>";
+		};
+		6985F86795378A89EA9DBF1E7388D792 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69AE608F77B201DABEAF36C607735DCD /* Pods-HiPages */,
+				7ADD55F8DFF5FCC29E11560E81B7E401 /* Pods-HiPagesTests */,
+				F06AF8E13DC0DBA6FCE771F3EC71F064 /* Pods-HiPagesUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		69AE608F77B201DABEAF36C607735DCD /* Pods-HiPages */ = {
+			isa = PBXGroup;
+			children = (
+				C6AB0C555B03F08D43F3C109EC84CD81 /* Pods-HiPages.modulemap */,
+				35C9630334F5430CC1BEFD49513E7E4F /* Pods-HiPages-acknowledgements.markdown */,
+				58DCBC9D5B3134797A105F2D3CC6C22F /* Pods-HiPages-acknowledgements.plist */,
+				10B1075D57C70119840573DEA0565AA2 /* Pods-HiPages-dummy.m */,
+				ADB59354610F17253125233317E3D255 /* Pods-HiPages-frameworks.sh */,
+				8C1362E003D3801CF49394EFEA7A5C52 /* Pods-HiPages-Info.plist */,
+				C14E6F86CCA66912B8A827097C5FD28F /* Pods-HiPages-umbrella.h */,
+				F859F47CF31FBDAA6109501C72E4DA86 /* Pods-HiPages.debug.xcconfig */,
+				FC89336AA6B4BFF014C9DE60CFAF1278 /* Pods-HiPages.release.xcconfig */,
+			);
+			name = "Pods-HiPages";
+			path = "Target Support Files/Pods-HiPages";
+			sourceTree = "<group>";
+		};
+		7ADD55F8DFF5FCC29E11560E81B7E401 /* Pods-HiPagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				11C4BE2B63E2ED352283EBEA32EEF2F5 /* Pods-HiPagesTests.modulemap */,
+				B0A077B2C882A680522E87D1822CE7B7 /* Pods-HiPagesTests-acknowledgements.markdown */,
+				4B23DC32E2678305939BA98D69835D53 /* Pods-HiPagesTests-acknowledgements.plist */,
+				312CFE6C7C5CE26F55F0657947959B88 /* Pods-HiPagesTests-dummy.m */,
+				E4E3744CA4BDFED8701F9026328C4D9C /* Pods-HiPagesTests-Info.plist */,
+				D4AF9F1FC8D726AF9290A75E80F5D8A1 /* Pods-HiPagesTests-umbrella.h */,
+				F048C07B8F5C14C6AE38A228C05443F9 /* Pods-HiPagesTests.debug.xcconfig */,
+				1DC4C771D5A1646D211AD5A06403F20E /* Pods-HiPagesTests.release.xcconfig */,
+			);
+			name = "Pods-HiPagesTests";
+			path = "Target Support Files/Pods-HiPagesTests";
+			sourceTree = "<group>";
+		};
+		86046AA3893B7CF15C6B4EFBB31377D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF024DCEACF139617EC596C45282C2F1 /* Dwifft.framework */,
+				9B500C58C220FA5B66EEE83A02F4546D /* Pods_HiPages.framework */,
+				3CEBEC8E23E3EF25886A015F8860F9C0 /* Pods_HiPagesTests.framework */,
+				D75376C977774B1B79088FA740378C85 /* Pods_HiPagesUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C92EEAB2665E935D77571D23EA922394 /* Dwifft */ = {
+			isa = PBXGroup;
+			children = (
+				A92EF6ECB3B86B047735A48A9FFB8B51 /* AbstractDiffCalculator.swift */,
+				18E42E5D13EB1DB8D9C1B947A5A95DB3 /* Dwifft.swift */,
+				A6B091E0526B1DAE13F7D7092710E587 /* Dwifft+AppKit.swift */,
+				2A6ADB998F1D7F704CF16A687C090EF6 /* Dwifft+UIKit.swift */,
+				B370554140D3D52C63263F59B51EEC69 /* SectionedValues.swift */,
+				419A70EEF9F808B34CDB38AC06AD4475 /* Support Files */,
+			);
+			path = Dwifft;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0A208BB7EF4CF5654F26F1A4F4DCF274 /* Pods */,
+				86046AA3893B7CF15C6B4EFBB31377D3 /* Products */,
+				6985F86795378A89EA9DBF1E7388D792 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06AF8E13DC0DBA6FCE771F3EC71F064 /* Pods-HiPagesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BC7958931CDEDCD98819FBADB0D86F6 /* Pods-HiPagesUITests.modulemap */,
+				7E59730EF52D44125935B249A6E66079 /* Pods-HiPagesUITests-acknowledgements.markdown */,
+				B5D5D9F0E6B19842B06934C2828A4545 /* Pods-HiPagesUITests-acknowledgements.plist */,
+				49BF43452C6C30EC6C61B19038581C8C /* Pods-HiPagesUITests-dummy.m */,
+				D6522EC11E0B98767747D0B33CF84F46 /* Pods-HiPagesUITests-Info.plist */,
+				678E18F1216D3335D894B5770A564A2D /* Pods-HiPagesUITests-umbrella.h */,
+				4A897B5E27A5E1B37033B33E55445FDB /* Pods-HiPagesUITests.debug.xcconfig */,
+				40B65D9BC17F950A2B0D39AE5A7B94AA /* Pods-HiPagesUITests.release.xcconfig */,
+			);
+			name = "Pods-HiPagesUITests";
+			path = "Target Support Files/Pods-HiPagesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0533FE11D428313120220B24A6B231D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA789F66A5EB47D0111D6B99B518788 /* Pods-HiPagesUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1521702FC48519E16ECE95C68CAEB931 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5981B13171D3F5B79B062B1D2733350 /* Pods-HiPagesTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5907D39E8C17401363C472B3AE633C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75837B465BBEAAAB8FFC2FC64869FED /* Pods-HiPages-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F1943802E8736187005871BB4F6723 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D98B888ACA1822CD885AE930EB9F1DA /* Dwifft-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		051203F781CB0E6EBD90690D6D8E7F63 /* Pods-HiPages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C3E7BA533D154B354EC22DB44EEA081 /* Build configuration list for PBXNativeTarget "Pods-HiPages" */;
+			buildPhases = (
+				B5907D39E8C17401363C472B3AE633C5 /* Headers */,
+				FCCAA2D8ABC7EFCC8ECA6AC6FFF96B12 /* Sources */,
+				DC522793324A80C21CF12D8D89A0F451 /* Frameworks */,
+				9C11537CECB5D8EB98EB393951F889DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B32C3EBFE5334D2B14A2F99D91A18A7E /* PBXTargetDependency */,
+			);
+			name = "Pods-HiPages";
+			productName = "Pods-HiPages";
+			productReference = 9B500C58C220FA5B66EEE83A02F4546D /* Pods_HiPages.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		08BBDF9D9A18F2A4DF2239DF8DD9AE57 /* Pods-HiPagesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EFC65ACA36D6708B7FFA39A6B2C0050 /* Build configuration list for PBXNativeTarget "Pods-HiPagesUITests" */;
+			buildPhases = (
+				0533FE11D428313120220B24A6B231D9 /* Headers */,
+				0ECAD1C2A34F58AABD510A265A4CED20 /* Sources */,
+				9A7105D472BBEAE249BE21C936323981 /* Frameworks */,
+				6ED23FDD04FF56B4CBEF76D9562E45D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577C253AF536F8205B1DED0483C60014 /* PBXTargetDependency */,
+			);
+			name = "Pods-HiPagesUITests";
+			productName = "Pods-HiPagesUITests";
+			productReference = D75376C977774B1B79088FA740378C85 /* Pods_HiPagesUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4255A53C9FC46E2A6605D689307219F6 /* Dwifft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67375D2293447FAF29DF2E5022FF51F7 /* Build configuration list for PBXNativeTarget "Dwifft" */;
+			buildPhases = (
+				B7F1943802E8736187005871BB4F6723 /* Headers */,
+				40331C885CE19F8625C67402AE78230A /* Sources */,
+				CEFF38456BEA24070873C7A757E8E10D /* Frameworks */,
+				E95C69620542908F55D87BBD7BCF3392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dwifft;
+			productName = Dwifft;
+			productReference = FF024DCEACF139617EC596C45282C2F1 /* Dwifft.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A27C08770984DB720B9DD5BBB9EFBDFB /* Pods-HiPagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F313C9BB082D6C8A068495A45B269036 /* Build configuration list for PBXNativeTarget "Pods-HiPagesTests" */;
+			buildPhases = (
+				1521702FC48519E16ECE95C68CAEB931 /* Headers */,
+				97B09CF20F91A0AD0BB8DC2CC1CA0688 /* Sources */,
+				FFB21E4ED58C66C4D1E87D8FC3BBF707 /* Frameworks */,
+				47ABAA9D9C252AAA98DEA991CC6F6237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B402FDFF447132B9C9EEEBC2CC8EA41 /* PBXTargetDependency */,
+			);
+			name = "Pods-HiPagesTests";
+			productName = "Pods-HiPagesTests";
+			productReference = 3CEBEC8E23E3EF25886A015F8860F9C0 /* Pods_HiPagesTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 86046AA3893B7CF15C6B4EFBB31377D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4255A53C9FC46E2A6605D689307219F6 /* Dwifft */,
+				051203F781CB0E6EBD90690D6D8E7F63 /* Pods-HiPages */,
+				A27C08770984DB720B9DD5BBB9EFBDFB /* Pods-HiPagesTests */,
+				08BBDF9D9A18F2A4DF2239DF8DD9AE57 /* Pods-HiPagesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47ABAA9D9C252AAA98DEA991CC6F6237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED23FDD04FF56B4CBEF76D9562E45D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C11537CECB5D8EB98EB393951F889DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95C69620542908F55D87BBD7BCF3392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ECAD1C2A34F58AABD510A265A4CED20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE227E6891B1A964AA2BB2B16F8D3349 /* Pods-HiPagesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40331C885CE19F8625C67402AE78230A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B28AF4E12913AC5EEBAF7499182DF0B /* AbstractDiffCalculator.swift in Sources */,
+				4452A4C261337D00D753E7E3A12B8506 /* Dwifft+AppKit.swift in Sources */,
+				8F958A757695F959363483AF5B109D64 /* Dwifft+UIKit.swift in Sources */,
+				DF3B83C81214CC3290255C922E55DDF1 /* Dwifft-dummy.m in Sources */,
+				894969C74BE3934962FF7FCBBC0BF161 /* Dwifft.swift in Sources */,
+				1ADD9D0AD5F0657B7809864B756BC155 /* SectionedValues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B09CF20F91A0AD0BB8DC2CC1CA0688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0068C2E9306676EE709453D9C3968503 /* Pods-HiPagesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCAA2D8ABC7EFCC8ECA6AC6FFF96B12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075164C5A081698A44439CB37AFC9A59 /* Pods-HiPages-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B402FDFF447132B9C9EEEBC2CC8EA41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HiPages";
+			target = 051203F781CB0E6EBD90690D6D8E7F63 /* Pods-HiPages */;
+			targetProxy = 0F34A22729339485533DDCBB0C39B841 /* PBXContainerItemProxy */;
+		};
+		577C253AF536F8205B1DED0483C60014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HiPages";
+			target = 051203F781CB0E6EBD90690D6D8E7F63 /* Pods-HiPages */;
+			targetProxy = 8730483D806F2960CD869F85EB99F773 /* PBXContainerItemProxy */;
+		};
+		B32C3EBFE5334D2B14A2F99D91A18A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dwifft;
+			target = 4255A53C9FC46E2A6605D689307219F6 /* Dwifft */;
+			targetProxy = CA05FBD918C6ADA29D63FCD9A000CBF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40839A5D5E77BA6F772EA5B6E0546619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DC4C771D5A1646D211AD5A06403F20E /* Pods-HiPagesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		510B057D2E9F059C50D52DA5D90F3ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		675ABF4DCDC93350FC335B767C7DC4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F859F47CF31FBDAA6109501C72E4DA86 /* Pods-HiPages.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiPages/Pods-HiPages-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiPages/Pods-HiPages.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		804E13245C9FBBE6A340C555CA8B2B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8A07D82C7278AD014FEED4B7AA60A802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B65D9BC17F950A2B0D39AE5A7B94AA /* Pods-HiPagesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiPagesUITests/Pods-HiPagesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiPagesUITests/Pods-HiPagesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B24A4DC9E187E5C074453BC94DDBA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dwifft/Dwifft-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
+				PRODUCT_MODULE_NAME = Dwifft;
+				PRODUCT_NAME = Dwifft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A34298A6B206BBFAAC04114BECAB5F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC89336AA6B4BFF014C9DE60CFAF1278 /* Pods-HiPages.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiPages/Pods-HiPages-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiPages/Pods-HiPages.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA030FB1E4F36E179543E3FDC0186B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dwifft/Dwifft-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
+				PRODUCT_MODULE_NAME = Dwifft;
+				PRODUCT_NAME = Dwifft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5E2A9D2D0C7F0F50D344319F1EF970B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F048C07B8F5C14C6AE38A228C05443F9 /* Pods-HiPagesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFA305A5B8FB2D87DD16C7E1900DE9C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A897B5E27A5E1B37033B33E55445FDB /* Pods-HiPagesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiPagesUITests/Pods-HiPagesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiPagesUITests/Pods-HiPagesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804E13245C9FBBE6A340C555CA8B2B4C /* Debug */,
+				510B057D2E9F059C50D52DA5D90F3ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67375D2293447FAF29DF2E5022FF51F7 /* Build configuration list for PBXNativeTarget "Dwifft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B24A4DC9E187E5C074453BC94DDBA01 /* Debug */,
+				BA030FB1E4F36E179543E3FDC0186B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EFC65ACA36D6708B7FFA39A6B2C0050 /* Build configuration list for PBXNativeTarget "Pods-HiPagesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA305A5B8FB2D87DD16C7E1900DE9C7 /* Debug */,
+				8A07D82C7278AD014FEED4B7AA60A802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C3E7BA533D154B354EC22DB44EEA081 /* Build configuration list for PBXNativeTarget "Pods-HiPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				675ABF4DCDC93350FC335B767C7DC4B7 /* Debug */,
+				A34298A6B206BBFAAC04114BECAB5F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F313C9BB082D6C8A068495A45B269036 /* Build configuration list for PBXNativeTarget "Pods-HiPagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E2A9D2D0C7F0F50D344319F1EF970B /* Debug */,
+				40839A5D5E77BA6F772EA5B6E0546619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

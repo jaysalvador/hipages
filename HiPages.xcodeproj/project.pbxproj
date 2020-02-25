@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53BBE1EA8EC505BA97AA5612 /* Pods_HiPagesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F149EF8432724D9D187F5D /* Pods_HiPagesUITests.framework */; };
+		6881D9686A146520ECF894D8 /* Pods_HiPagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A496E3526253C4FEC33FF7 /* Pods_HiPagesTests.framework */; };
+		B503A6BF2404BC2A001B008A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6BE2404BC2A001B008A /* Job.swift */; };
+		B503A6C12404BCE4001B008A /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C02404BCE4001B008A /* Business.swift */; };
+		B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531658B2400E92B00B9257C /* AppDelegate.swift */; };
+		B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B53165942400E92B00B9257C /* HiPages.xcdatamodeld */; };
+		B53165982400E92C00B9257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53165972400E92C00B9257C /* Assets.xcassets */; };
+		B531659B2400E92C00B9257C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53165992400E92C00B9257C /* LaunchScreen.storyboard */; };
+		B53165A62400E92C00B9257C /* HiPagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165A52400E92C00B9257C /* HiPagesTests.swift */; };
+		B53165B12400E92C00B9257C /* HiPagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165B02400E92C00B9257C /* HiPagesUITests.swift */; };
+		B53165C024011E0200B9257C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165BE24011E0200B9257C /* TestViewController.swift */; };
+		B53165C124011E0200B9257C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53165BF24011E0200B9257C /* TestViewController.xib */; };
+		B53165C424011ECD00B9257C /* JCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165C324011ECD00B9257C /* JCollectionViewController.swift */; };
+		B53165C72401287F00B9257C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165C62401287F00B9257C /* UICollectionView.swift */; };
+		B9F7557FD9699F7BF6CDAE06 /* Pods_HiPages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B595D56985C08057E48D02E /* Pods_HiPages.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B53165A22400E92C00B9257C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53165802400E92B00B9257C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53165872400E92B00B9257C;
+			remoteInfo = HiPages;
+		};
+		B53165AD2400E92C00B9257C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53165802400E92B00B9257C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53165872400E92B00B9257C;
+			remoteInfo = HiPages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1447C072AE7BAF6C29164DBC /* Pods-HiPagesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPagesUITests.release.xcconfig"; path = "Target Support Files/Pods-HiPagesUITests/Pods-HiPagesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16AFCCBDADBCAC4E2972BFC0 /* Pods-HiPagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPagesTests.debug.xcconfig"; path = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B595D56985C08057E48D02E /* Pods_HiPages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2178D2A8CA381FC952CD6F61 /* Pods-HiPagesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPagesUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiPagesUITests/Pods-HiPagesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44F149EF8432724D9D187F5D /* Pods_HiPagesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPagesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CB058592254EF87AC16DDE /* Pods-HiPagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPagesTests.release.xcconfig"; path = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests.release.xcconfig"; sourceTree = "<group>"; };
+		B503A6BE2404BC2A001B008A /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		B503A6C02404BCE4001B008A /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		B53165882400E92B00B9257C /* HiPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B531658B2400E92B00B9257C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53165952400E92B00B9257C /* HiPages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HiPages.xcdatamodel; sourceTree = "<group>"; };
+		B53165972400E92C00B9257C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B531659A2400E92C00B9257C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B531659C2400E92C00B9257C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53165A12400E92C00B9257C /* HiPagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiPagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53165A52400E92C00B9257C /* HiPagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiPagesTests.swift; sourceTree = "<group>"; };
+		B53165A72400E92C00B9257C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53165AC2400E92C00B9257C /* HiPagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiPagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53165B02400E92C00B9257C /* HiPagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiPagesUITests.swift; sourceTree = "<group>"; };
+		B53165B22400E92C00B9257C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53165BE24011E0200B9257C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B53165BF24011E0200B9257C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		B53165C324011ECD00B9257C /* JCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCollectionViewController.swift; sourceTree = "<group>"; };
+		B53165C62401287F00B9257C /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		C2A496E3526253C4FEC33FF7 /* Pods_HiPagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20A4A344477D705A8DF562A /* Pods-HiPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPages.debug.xcconfig"; path = "Target Support Files/Pods-HiPages/Pods-HiPages.debug.xcconfig"; sourceTree = "<group>"; };
+		FED7CE1BDD434AA78EBFA939 /* Pods-HiPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPages.release.xcconfig"; path = "Target Support Files/Pods-HiPages/Pods-HiPages.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B53165852400E92B00B9257C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F7557FD9699F7BF6CDAE06 /* Pods_HiPages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531659E2400E92C00B9257C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6881D9686A146520ECF894D8 /* Pods_HiPagesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53165A92400E92C00B9257C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BBE1EA8EC505BA97AA5612 /* Pods_HiPagesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56B56AFF909CA77FE546336E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B595D56985C08057E48D02E /* Pods_HiPages.framework */,
+				C2A496E3526253C4FEC33FF7 /* Pods_HiPagesTests.framework */,
+				44F149EF8432724D9D187F5D /* Pods_HiPagesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B503A6BD2404BC0E001B008A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B503A6BE2404BC2A001B008A /* Job.swift */,
+				B503A6C02404BCE4001B008A /* Business.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B531657F2400E92B00B9257C = {
+			isa = PBXGroup;
+			children = (
+				B531658A2400E92B00B9257C /* HiPages */,
+				B53165A42400E92C00B9257C /* HiPagesTests */,
+				B53165AF2400E92C00B9257C /* HiPagesUITests */,
+				B53165892400E92B00B9257C /* Products */,
+				D810AFC1E3ED983BB1275BB3 /* Pods */,
+				56B56AFF909CA77FE546336E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B53165892400E92B00B9257C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B53165882400E92B00B9257C /* HiPages.app */,
+				B53165A12400E92C00B9257C /* HiPagesTests.xctest */,
+				B53165AC2400E92C00B9257C /* HiPagesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B531658A2400E92B00B9257C /* HiPages */ = {
+			isa = PBXGroup;
+			children = (
+				B503A6BD2404BC0E001B008A /* Models */,
+				B53165C52401286C00B9257C /* Extensions */,
+				B53165C224011E9000B9257C /* Controllers */,
+				B53165972400E92C00B9257C /* Assets.xcassets */,
+				B531658B2400E92B00B9257C /* AppDelegate.swift */,
+				B53165BE24011E0200B9257C /* TestViewController.swift */,
+				B53165BF24011E0200B9257C /* TestViewController.xib */,
+				B53165992400E92C00B9257C /* LaunchScreen.storyboard */,
+				B531659C2400E92C00B9257C /* Info.plist */,
+				B53165942400E92B00B9257C /* HiPages.xcdatamodeld */,
+			);
+			path = HiPages;
+			sourceTree = "<group>";
+		};
+		B53165A42400E92C00B9257C /* HiPagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B53165A52400E92C00B9257C /* HiPagesTests.swift */,
+				B53165A72400E92C00B9257C /* Info.plist */,
+			);
+			path = HiPagesTests;
+			sourceTree = "<group>";
+		};
+		B53165AF2400E92C00B9257C /* HiPagesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B53165B02400E92C00B9257C /* HiPagesUITests.swift */,
+				B53165B22400E92C00B9257C /* Info.plist */,
+			);
+			path = HiPagesUITests;
+			sourceTree = "<group>";
+		};
+		B53165C224011E9000B9257C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B53165C324011ECD00B9257C /* JCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B53165C52401286C00B9257C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B53165C62401287F00B9257C /* UICollectionView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D810AFC1E3ED983BB1275BB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F20A4A344477D705A8DF562A /* Pods-HiPages.debug.xcconfig */,
+				FED7CE1BDD434AA78EBFA939 /* Pods-HiPages.release.xcconfig */,
+				16AFCCBDADBCAC4E2972BFC0 /* Pods-HiPagesTests.debug.xcconfig */,
+				83CB058592254EF87AC16DDE /* Pods-HiPagesTests.release.xcconfig */,
+				2178D2A8CA381FC952CD6F61 /* Pods-HiPagesUITests.debug.xcconfig */,
+				1447C072AE7BAF6C29164DBC /* Pods-HiPagesUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B53165872400E92B00B9257C /* HiPages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53165B52400E92C00B9257C /* Build configuration list for PBXNativeTarget "HiPages" */;
+			buildPhases = (
+				9D87A0E27D41C0A59B535994 /* [CP] Check Pods Manifest.lock */,
+				B53165842400E92B00B9257C /* Sources */,
+				B53165852400E92B00B9257C /* Frameworks */,
+				B53165862400E92B00B9257C /* Resources */,
+				3CCEE140C6AC191B2242F32D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiPages;
+			productName = HiPages;
+			productReference = B53165882400E92B00B9257C /* HiPages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B53165A02400E92C00B9257C /* HiPagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53165B82400E92C00B9257C /* Build configuration list for PBXNativeTarget "HiPagesTests" */;
+			buildPhases = (
+				14061858FF20E668D7C705D8 /* [CP] Check Pods Manifest.lock */,
+				B531659D2400E92C00B9257C /* Sources */,
+				B531659E2400E92C00B9257C /* Frameworks */,
+				B531659F2400E92C00B9257C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53165A32400E92C00B9257C /* PBXTargetDependency */,
+			);
+			name = HiPagesTests;
+			productName = HiPagesTests;
+			productReference = B53165A12400E92C00B9257C /* HiPagesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B53165AB2400E92C00B9257C /* HiPagesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53165BB2400E92C00B9257C /* Build configuration list for PBXNativeTarget "HiPagesUITests" */;
+			buildPhases = (
+				5F8020824E028518CEF1669D /* [CP] Check Pods Manifest.lock */,
+				B53165A82400E92C00B9257C /* Sources */,
+				B53165A92400E92C00B9257C /* Frameworks */,
+				B53165AA2400E92C00B9257C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53165AE2400E92C00B9257C /* PBXTargetDependency */,
+			);
+			name = HiPagesUITests;
+			productName = HiPagesUITests;
+			productReference = B53165AC2400E92C00B9257C /* HiPagesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B53165802400E92B00B9257C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Jay Salvador";
+				TargetAttributes = {
+					B53165872400E92B00B9257C = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B53165A02400E92C00B9257C = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B53165872400E92B00B9257C;
+					};
+					B53165AB2400E92C00B9257C = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B53165872400E92B00B9257C;
+					};
+				};
+			};
+			buildConfigurationList = B53165832400E92B00B9257C /* Build configuration list for PBXProject "HiPages" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B531657F2400E92B00B9257C;
+			productRefGroup = B53165892400E92B00B9257C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B53165872400E92B00B9257C /* HiPages */,
+				B53165A02400E92C00B9257C /* HiPagesTests */,
+				B53165AB2400E92C00B9257C /* HiPagesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B53165862400E92B00B9257C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B531659B2400E92C00B9257C /* LaunchScreen.storyboard in Resources */,
+				B53165C124011E0200B9257C /* TestViewController.xib in Resources */,
+				B53165982400E92C00B9257C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531659F2400E92C00B9257C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53165AA2400E92C00B9257C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14061858FF20E668D7C705D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiPagesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CCEE140C6AC191B2242F32D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiPages/Pods-HiPages-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiPages/Pods-HiPages-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiPages/Pods-HiPages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F8020824E028518CEF1669D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiPagesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D87A0E27D41C0A59B535994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiPages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B53165842400E92B00B9257C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53165C72401287F00B9257C /* UICollectionView.swift in Sources */,
+				B503A6C12404BCE4001B008A /* Business.swift in Sources */,
+				B503A6BF2404BC2A001B008A /* Job.swift in Sources */,
+				B53165C424011ECD00B9257C /* JCollectionViewController.swift in Sources */,
+				B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */,
+				B53165C024011E0200B9257C /* TestViewController.swift in Sources */,
+				B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B531659D2400E92C00B9257C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53165A62400E92C00B9257C /* HiPagesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53165A82400E92C00B9257C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53165B12400E92C00B9257C /* HiPagesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B53165A32400E92C00B9257C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53165872400E92B00B9257C /* HiPages */;
+			targetProxy = B53165A22400E92C00B9257C /* PBXContainerItemProxy */;
+		};
+		B53165AE2400E92C00B9257C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53165872400E92B00B9257C /* HiPages */;
+			targetProxy = B53165AD2400E92C00B9257C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B53165992400E92C00B9257C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B531659A2400E92C00B9257C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B53165B32400E92C00B9257C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B53165B42400E92C00B9257C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B53165B62400E92C00B9257C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20A4A344477D705A8DF562A /* Pods-HiPages.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HiPages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.HiPages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B53165B72400E92C00B9257C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED7CE1BDD434AA78EBFA939 /* Pods-HiPages.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HiPages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.HiPages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B53165B92400E92C00B9257C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AFCCBDADBCAC4E2972BFC0 /* Pods-HiPagesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiPagesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.HiPagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiPages.app/HiPages";
+			};
+			name = Debug;
+		};
+		B53165BA2400E92C00B9257C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CB058592254EF87AC16DDE /* Pods-HiPagesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiPagesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.HiPagesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiPages.app/HiPages";
+			};
+			name = Release;
+		};
+		B53165BC2400E92C00B9257C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2178D2A8CA381FC952CD6F61 /* Pods-HiPagesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiPagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.HiPagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiPages;
+			};
+			name = Debug;
+		};
+		B53165BD2400E92C00B9257C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1447C072AE7BAF6C29164DBC /* Pods-HiPagesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiPagesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.HiPagesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiPages;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B53165832400E92B00B9257C /* Build configuration list for PBXProject "HiPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53165B32400E92C00B9257C /* Debug */,
+				B53165B42400E92C00B9257C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53165B52400E92C00B9257C /* Build configuration list for PBXNativeTarget "HiPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53165B62400E92C00B9257C /* Debug */,
+				B53165B72400E92C00B9257C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53165B82400E92C00B9257C /* Build configuration list for PBXNativeTarget "HiPagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53165B92400E92C00B9257C /* Debug */,
+				B53165BA2400E92C00B9257C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53165BB2400E92C00B9257C /* Build configuration list for PBXNativeTarget "HiPagesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53165BC2400E92C00B9257C /* Debug */,
+				B53165BD2400E92C00B9257C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B53165942400E92B00B9257C /* HiPages.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B53165952400E92B00B9257C /* HiPages.xcdatamodel */,
+			);
+			currentVersion = B53165952400E92B00B9257C /* HiPages.xcdatamodel */;
+			path = HiPages.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B53165802400E92B00B9257C /* Project object */;
+}
