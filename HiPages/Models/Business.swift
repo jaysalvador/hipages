@@ -13,5 +13,11 @@ struct Business: Codable {
     var id: Int?
     var thumbnail: String?
     var hired: Bool?
-    
+
+    enum CodingKeys: String, CodingKey {
+
+        case id = "businessId"
+        case thumbnail
+        case hired = "isHired"
+    }
 }

@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+extension DateFormatter {
+    
+    static let yearMonthDay: DateFormatter = {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = .current
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        return dateFormatter
+    }()
+}

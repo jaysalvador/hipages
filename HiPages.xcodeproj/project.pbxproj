@@ -11,6 +11,12 @@
 		6881D9686A146520ECF894D8 /* Pods_HiPagesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A496E3526253C4FEC33FF7 /* Pods_HiPagesTests.framework */; };
 		B503A6BF2404BC2A001B008A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6BE2404BC2A001B008A /* Job.swift */; };
 		B503A6C12404BCE4001B008A /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C02404BCE4001B008A /* Business.swift */; };
+		B503A6C42404D607001B008A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C32404D607001B008A /* HttpClient.swift */; };
+		B503A6C62404EC15001B008A /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C52404EC15001B008A /* DispatchQueue.swift */; };
+		B503A6C82404EE69001B008A /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C72404EE69001B008A /* HttpError.swift */; };
+		B503A6CA2404EF23001B008A /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6C92404EF23001B008A /* URLSession.swift */; };
+		B503A6CC2404EFCC001B008A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6CB2404EFCC001B008A /* DateFormatter.swift */; };
+		B503A6CE2404F1C4001B008A /* JobClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503A6CD2404F1C4001B008A /* JobClient.swift */; };
 		B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531658B2400E92B00B9257C /* AppDelegate.swift */; };
 		B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B53165942400E92B00B9257C /* HiPages.xcdatamodeld */; };
 		B53165982400E92C00B9257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53165972400E92C00B9257C /* Assets.xcassets */; };
@@ -50,6 +56,12 @@
 		83CB058592254EF87AC16DDE /* Pods-HiPagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPagesTests.release.xcconfig"; path = "Target Support Files/Pods-HiPagesTests/Pods-HiPagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		B503A6BE2404BC2A001B008A /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		B503A6C02404BCE4001B008A /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		B503A6C32404D607001B008A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B503A6C52404EC15001B008A /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		B503A6C72404EE69001B008A /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		B503A6C92404EF23001B008A /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		B503A6CB2404EFCC001B008A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		B503A6CD2404F1C4001B008A /* JobClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobClient.swift; sourceTree = "<group>"; };
 		B53165882400E92B00B9257C /* HiPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B531658B2400E92B00B9257C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53165952400E92B00B9257C /* HiPages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HiPages.xcdatamodel; sourceTree = "<group>"; };
@@ -118,6 +130,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B503A6C22404D2F4001B008A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B503A6CD2404F1C4001B008A /* JobClient.swift */,
+				B503A6C32404D607001B008A /* HttpClient.swift */,
+				B503A6C72404EE69001B008A /* HttpError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		B531657F2400E92B00B9257C = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +165,7 @@
 		B531658A2400E92B00B9257C /* HiPages */ = {
 			isa = PBXGroup;
 			children = (
+				B503A6C22404D2F4001B008A /* API */,
 				B503A6BD2404BC0E001B008A /* Models */,
 				B53165C52401286C00B9257C /* Extensions */,
 				B53165C224011E9000B9257C /* Controllers */,
@@ -187,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				B53165C62401287F00B9257C /* UICollectionView.swift */,
+				B503A6C52404EC15001B008A /* DispatchQueue.swift */,
+				B503A6C92404EF23001B008A /* URLSession.swift */,
+				B503A6CB2404EFCC001B008A /* DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -425,13 +451,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B503A6CC2404EFCC001B008A /* DateFormatter.swift in Sources */,
 				B53165C72401287F00B9257C /* UICollectionView.swift in Sources */,
 				B503A6C12404BCE4001B008A /* Business.swift in Sources */,
+				B503A6CA2404EF23001B008A /* URLSession.swift in Sources */,
+				B503A6C82404EE69001B008A /* HttpError.swift in Sources */,
+				B503A6C42404D607001B008A /* HttpClient.swift in Sources */,
 				B503A6BF2404BC2A001B008A /* Job.swift in Sources */,
+				B503A6CE2404F1C4001B008A /* JobClient.swift in Sources */,
 				B53165C424011ECD00B9257C /* JCollectionViewController.swift in Sources */,
 				B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */,
 				B53165C024011E0200B9257C /* TestViewController.swift in Sources */,
 				B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */,
+				B503A6C62404EC15001B008A /* DispatchQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

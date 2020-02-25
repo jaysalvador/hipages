@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+extension DispatchQueue {
+    
+    class var background: DispatchQueue {
+        
+        return DispatchQueue.global(qos: .background)
+    }
+}
