@@ -39,7 +39,7 @@ class JobTitleCell: UICollectionViewCell {
         }
         
         self.jobStatusLabel?.text = job?.status?.rawValue.capitalized
-        
+
         return self
     }
 }

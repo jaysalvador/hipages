@@ -257,4 +257,16 @@ class JCollectionViewController<Section: Equatable, Item: Equatable>: UIViewCont
         return nil
     }
     
+    // MARK: - Dwifft convenience
+    
+    func cell(forSection section: Section, item: Item) -> UICollectionViewCell? {
+        
+        if let indexPath = self.diffCalculator?.indexPath(forSection: section, value: item) {
+            
+            return self.collectionView?.cellForItem(at: indexPath)
+        }
+        
+        return nil
+    }
+    
 }

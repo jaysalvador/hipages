@@ -74,8 +74,8 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
             if jobStatus == job.status {
                             
                 items.append(.title(job))
-//                items.append(.avatars(job))
-//                items.append(.details(job))
+                items.append(.avatars(job))
+                items.append(.details(job))
             }
         }
         
@@ -128,6 +128,8 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
         super.setupCollectionView()
         
         self.collectionView?.register(cell: JobTitleCell.self)
+        self.collectionView?.register(cell: JobBusinessesCell.self)
+        self.collectionView?.register(cell: JobDetailsCell.self)
     }
     
     private func setupButtonBorders() {
@@ -168,15 +170,41 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
                 return cell.prepare(job: job)
             }
         }
+        else if case .avatars(let job) = item {
+            
+            if let cell = self.collectionView?.dequeueReusable(cell: JobBusinessesCell.self, for: indexPath) {
+                
+                return cell.prepare(job: job)
+            }
+        }
+        else if case .details = item {
+            
+            if let cell = self.collectionView?.dequeueReusable(cell: JobDetailsCell.self, for: indexPath) {
+                
+                return cell
+            }
+        }
         
         return nil
     }
-
+    
     // MARK: - UICollectionViewDelegateFlowLayout
     
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForSection section: TestSection, item: TestItem, indexPath: IndexPath) -> CGSize? {
         
-        return CGSize(width: collectionView.frame.width, height: 112.0)
+        switch item {
+        case .avatars(let job):
+            
+            return JobBusinessesCell.size(givenWidth: collectionView.frame.width, job: job)
+            
+        case .title:
+        
+            return CGSize(width: collectionView.frame.width, height: 112.0)
+            
+        case .details:
+            
+            return CGSize(width: collectionView.frame.width, height: 80.0)
+        }
     }
     
     // MARK: - Actions

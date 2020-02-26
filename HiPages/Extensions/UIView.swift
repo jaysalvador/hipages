@@ -10,6 +10,19 @@ import UIKit
 
 extension UIView {
     
+    @IBInspectable
+    var cornerRadius: Float {
+        
+        set {
+            
+            self.layer.cornerRadius = CGFloat(newValue)
+        }
+        get {
+            
+            return Float(self.layer.cornerRadius)
+        }
+    }
+    
     func setBottomBorder(color: UIColor, width: CGFloat) {
         
         let border = CALayer()

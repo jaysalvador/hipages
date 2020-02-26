@@ -44,6 +44,16 @@
 		B5702319240510E7004386F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5702318240510E7004386F1 /* UIColor.swift */; };
 		B570231C2405131E004386F1 /* JobTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570231A2405131E004386F1 /* JobTitleCell.swift */; };
 		B570231D2405131E004386F1 /* JobTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B570231B2405131E004386F1 /* JobTitleCell.xib */; };
+		B5A8C6CD24062691002711DD /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6CC24062691002711DD /* AvatarView.swift */; };
+		B5A8C6CF240634CA002711DD /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6CE240634CA002711DD /* UIImageView.swift */; };
+		B5A8C6D124063906002711DD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6D024063906002711DD /* UIFont.swift */; };
+		B5A8C6D42406473F002711DD /* JobBusinessesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6D22406473F002711DD /* JobBusinessesCell.swift */; };
+		B5A8C6D52406473F002711DD /* JobBusinessesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A8C6D32406473F002711DD /* JobBusinessesCell.xib */; };
+		B5A8C6D724065195002711DD /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6D624065195002711DD /* AbstractDiffCalculator.swift */; };
+		B5A8C6DA24065779002711DD /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6D824065779002711DD /* AvatarCell.swift */; };
+		B5A8C6DB24065779002711DD /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A8C6D924065779002711DD /* AvatarCell.xib */; };
+		B5A8C6DE24065CB0002711DD /* JobDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8C6DC24065CAF002711DD /* JobDetailsCell.swift */; };
+		B5A8C6DF24065CB0002711DD /* JobDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A8C6DD24065CAF002711DD /* JobDetailsCell.xib */; };
 		B9F7557FD9699F7BF6CDAE06 /* Pods_HiPages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B595D56985C08057E48D02E /* Pods_HiPages.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +122,16 @@
 		B5702318240510E7004386F1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B570231A2405131E004386F1 /* JobTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleCell.swift; sourceTree = "<group>"; };
 		B570231B2405131E004386F1 /* JobTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTitleCell.xib; sourceTree = "<group>"; };
+		B5A8C6CC24062691002711DD /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		B5A8C6CE240634CA002711DD /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		B5A8C6D024063906002711DD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		B5A8C6D22406473F002711DD /* JobBusinessesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobBusinessesCell.swift; sourceTree = "<group>"; };
+		B5A8C6D32406473F002711DD /* JobBusinessesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobBusinessesCell.xib; sourceTree = "<group>"; };
+		B5A8C6D624065195002711DD /* AbstractDiffCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractDiffCalculator.swift; sourceTree = "<group>"; };
+		B5A8C6D824065779002711DD /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		B5A8C6D924065779002711DD /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		B5A8C6DC24065CAF002711DD /* JobDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsCell.swift; sourceTree = "<group>"; };
+		B5A8C6DD24065CAF002711DD /* JobDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailsCell.xib; sourceTree = "<group>"; };
 		C2A496E3526253C4FEC33FF7 /* Pods_HiPagesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiPagesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20A4A344477D705A8DF562A /* Pods-HiPages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPages.debug.xcconfig"; path = "Target Support Files/Pods-HiPages/Pods-HiPages.debug.xcconfig"; sourceTree = "<group>"; };
 		FED7CE1BDD434AA78EBFA939 /* Pods-HiPages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiPages.release.xcconfig"; path = "Target Support Files/Pods-HiPages/Pods-HiPages.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +199,12 @@
 			children = (
 				B570231A2405131E004386F1 /* JobTitleCell.swift */,
 				B570231B2405131E004386F1 /* JobTitleCell.xib */,
+				B5A8C6D22406473F002711DD /* JobBusinessesCell.swift */,
+				B5A8C6D32406473F002711DD /* JobBusinessesCell.xib */,
+				B5A8C6D824065779002711DD /* AvatarCell.swift */,
+				B5A8C6D924065779002711DD /* AvatarCell.xib */,
+				B5A8C6DC24065CAF002711DD /* JobDetailsCell.swift */,
+				B5A8C6DD24065CAF002711DD /* JobDetailsCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -213,6 +239,7 @@
 				B53165C52401286C00B9257C /* Extensions */,
 				B53165C224011E9000B9257C /* Controllers */,
 				B503A6D12404FDAB001B008A /* Cells */,
+				B5A8C6CB24062679002711DD /* Views */,
 				B57022FC240509F1004386F1 /* Resources */,
 				B531658B2400E92B00B9257C /* AppDelegate.swift */,
 				B53165992400E92C00B9257C /* LaunchScreen.storyboard */,
@@ -260,6 +287,9 @@
 				B503A6CB2404EFCC001B008A /* DateFormatter.swift */,
 				B570231624050F53004386F1 /* UIView.swift */,
 				B5702318240510E7004386F1 /* UIColor.swift */,
+				B5A8C6D024063906002711DD /* UIFont.swift */,
+				B5A8C6CE240634CA002711DD /* UIImageView.swift */,
+				B5A8C6D624065195002711DD /* AbstractDiffCalculator.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,6 +320,14 @@
 				B570230224050A16004386F1 /* SourceSansPro-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B5A8C6CB24062679002711DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5A8C6CC24062691002711DD /* AvatarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D810AFC1E3ED983BB1275BB3 /* Pods */ = {
@@ -415,6 +453,8 @@
 			files = (
 				B570231524050A16004386F1 /* SourceSansPro-ExtraLight.ttf in Resources */,
 				B570230A24050A16004386F1 /* SourceSansPro-BlackItalic.ttf in Resources */,
+				B5A8C6D52406473F002711DD /* JobBusinessesCell.xib in Resources */,
+				B5A8C6DF24065CB0002711DD /* JobDetailsCell.xib in Resources */,
 				B531659B2400E92C00B9257C /* LaunchScreen.storyboard in Resources */,
 				B570231324050A16004386F1 /* SourceSansPro-Black.ttf in Resources */,
 				B570230F24050A16004386F1 /* SourceSansPro-LightItalic.ttf in Resources */,
@@ -422,6 +462,7 @@
 				B570230E24050A16004386F1 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
 				B53165C124011E0200B9257C /* TestViewController.xib in Resources */,
 				B570231424050A16004386F1 /* SourceSansPro-BoldItalic.ttf in Resources */,
+				B5A8C6DB24065779002711DD /* AvatarCell.xib in Resources */,
 				B570231124050A16004386F1 /* SourceSansPro-ExtraLightItalic.ttf in Resources */,
 				B53165982400E92C00B9257C /* Assets.xcassets in Resources */,
 				B570230B24050A16004386F1 /* SourceSansPro-Italic.ttf in Resources */,
@@ -544,12 +585,19 @@
 				B503A6C12404BCE4001B008A /* Business.swift in Sources */,
 				B503A6CA2404EF23001B008A /* URLSession.swift in Sources */,
 				B503A6C82404EE69001B008A /* HttpError.swift in Sources */,
+				B5A8C6DA24065779002711DD /* AvatarCell.swift in Sources */,
 				B5702319240510E7004386F1 /* UIColor.swift in Sources */,
 				B503A6C42404D607001B008A /* HttpClient.swift in Sources */,
+				B5A8C6CD24062691002711DD /* AvatarView.swift in Sources */,
+				B5A8C6D124063906002711DD /* UIFont.swift in Sources */,
 				B503A6BF2404BC2A001B008A /* Job.swift in Sources */,
+				B5A8C6D724065195002711DD /* AbstractDiffCalculator.swift in Sources */,
 				B503A6CE2404F1C4001B008A /* JobClient.swift in Sources */,
 				B570231C2405131E004386F1 /* JobTitleCell.swift in Sources */,
 				B53165C424011ECD00B9257C /* JCollectionViewController.swift in Sources */,
+				B5A8C6CF240634CA002711DD /* UIImageView.swift in Sources */,
+				B5A8C6DE24065CB0002711DD /* JobDetailsCell.swift in Sources */,
+				B5A8C6D42406473F002711DD /* JobBusinessesCell.swift in Sources */,
 				B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */,
 				B570231724050F53004386F1 /* UIView.swift in Sources */,
 				B53165C024011E0200B9257C /* TestViewController.swift in Sources */,

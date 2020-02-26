@@ -6,6 +6,7 @@ target 'HiPages' do
   use_frameworks!
 
   pod 'Dwifft', :git => 'https://github.com/jflinter/Dwifft.git', :commit => 'c5a9c62'
+  pod 'Kingfisher'
 
   target 'HiPagesTests' do
 

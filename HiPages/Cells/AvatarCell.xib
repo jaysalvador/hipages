@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AvatarCell" customModule="HiPages" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dzk-SR-GLP">
+                        <rect key="frame" x="10" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="FhT-ep-8IG"/>
+                            <constraint firstAttribute="height" constant="70" id="VW4-dH-qzN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-O5-HiD">
+                        <rect key="frame" x="20" y="72" width="50" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIRED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHr-kO-efi">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="15"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DHr-kO-efi" secondAttribute="bottom" id="1Mc-lT-iIw"/>
+                            <constraint firstItem="DHr-kO-efi" firstAttribute="leading" secondItem="I6j-O5-HiD" secondAttribute="leading" id="3jh-7J-lgX"/>
+                            <constraint firstItem="DHr-kO-efi" firstAttribute="top" secondItem="I6j-O5-HiD" secondAttribute="top" id="5EZ-pg-0dy"/>
+                            <constraint firstAttribute="trailing" secondItem="DHr-kO-efi" secondAttribute="trailing" id="b9I-Hd-Css"/>
+                            <constraint firstAttribute="height" constant="15" id="nVX-JY-V15"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dzk-SR-GLP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Qry-cX-2U9"/>
+                <constraint firstItem="I6j-O5-HiD" firstAttribute="top" secondItem="dzk-SR-GLP" secondAttribute="bottom" constant="-8" id="YVO-uv-wR4"/>
+                <constraint firstItem="I6j-O5-HiD" firstAttribute="leading" secondItem="dzk-SR-GLP" secondAttribute="leading" constant="10" id="uNf-jr-wOq"/>
+                <constraint firstItem="dzk-SR-GLP" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="w8B-o1-wF3"/>
+                <constraint firstItem="I6j-O5-HiD" firstAttribute="trailing" secondItem="dzk-SR-GLP" secondAttribute="trailing" constant="-10" id="yyf-Yc-WkE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="163" height="149"/>
+            <connections>
+                <outlet property="hiredView" destination="I6j-O5-HiD" id="E2L-Cm-aos"/>
+                <outlet property="imageView" destination="dzk-SR-GLP" id="gH5-3c-Xg2"/>
+            </connections>
+            <point key="canvasLocation" x="81.884057971014499" y="162.38839285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
