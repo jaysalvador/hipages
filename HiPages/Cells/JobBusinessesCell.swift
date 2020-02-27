@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet
     private var jobTitleLabel: UILabel?
@@ -16,10 +16,7 @@ class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UIColle
     @IBOutlet
     private var collectionView: UICollectionView?
     
-    @IBOutlet
-    private var collectionViewWidthConstraint: NSLayoutConstraint?
-    
-    private(set) var businesses: [Business]?
+    private var businesses: [[Business?]]?
     
     // MARK: - View life cycle
     
@@ -32,7 +29,7 @@ class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UIColle
     
     func prepare(job: Job?) -> UICollectionViewCell {
         
-        self.businesses = job?.connectedBusinesses
+        self.businesses = [[Business]]()
         
         self.collectionView?.reloadData()
         
@@ -42,10 +39,10 @@ class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UIColle
         
         if let businesses = job?.connectedBusinesses, businesses.count > 0 {
             
-            let maxAvatarsInLine = floor(self.frame.width / AvatarCell.size)
+            let maxAvatarsInLine = min(CGFloat(businesses.count), floor(self.frame.width / AvatarCell.size))
             
-            self.collectionViewWidthConstraint?.constant = min(maxAvatarsInLine * AvatarCell.size, CGFloat(businesses.count) * AvatarCell.size)
-
+            self.businesses = businesses.group(into: Int(maxAvatarsInLine))
+            
             self.jobTitleLabel?.text = "You have hired \(businesses.count) business\(businesses.count == 1 ? "" : "es")"
         }
         else {
@@ -69,17 +66,23 @@ class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UIColle
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
-        return 1
+        return self.businesses?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return self.businesses?.count ?? 0
+        if let businessGroup = self.businesses?[section] {
+
+            return businessGroup.count
+        }
+        
+        return .zero
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if let business = self.businesses?[indexPath.item],
+        if let businessGroup = self.businesses?[indexPath.section],
+            let business = businessGroup[indexPath.item],
             let cell = self.collectionView?.dequeueReusable(cell: AvatarCell.self, for: indexPath) {
 
             return cell.prepare(business: business)
@@ -87,6 +90,17 @@ class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UIColle
         
         return UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+        let items = collectionView.numberOfItems(inSection: section)
+        
+        let padding = (collectionView.frame.width - (CGFloat(items) * AvatarCell.size)) / 2
+        
+        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
+    }
+    
+    // MARK: class functions
     
     class func size(givenWidth width: CGFloat, job: Job?) -> CGSize {
         
@@ -105,7 +119,7 @@ class JobBusinessesCell: UICollectionViewCell, UICollectionViewDelegate, UIColle
             
             let availableWidth = width - 20.0
             
-            let maxAvatarsInLine = floor(availableWidth / AvatarCell.size)
+            let maxAvatarsInLine: CGFloat = floor(availableWidth / AvatarCell.size)
             
             let maxLinesOfAvatars = Int(ceil(CGFloat(avatars) / maxAvatarsInLine))
             

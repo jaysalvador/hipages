@@ -98,9 +98,7 @@ class HttpClient: HttpClientProtocol {
                     catch {
                         
                         DispatchQueue.main.async {
-                            
-                            let rawString = String(data: data, encoding: .utf8)
-                                                        
+                                                                                    
                             onCompletion?(.failure(HttpError.decoding(error)))
                         }
                     }

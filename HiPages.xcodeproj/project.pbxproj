@@ -28,6 +28,7 @@
 		B53165C124011E0200B9257C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53165BF24011E0200B9257C /* TestViewController.xib */; };
 		B53165C424011ECD00B9257C /* JCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165C324011ECD00B9257C /* JCollectionViewController.swift */; };
 		B53165C72401287F00B9257C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53165C62401287F00B9257C /* UICollectionView.swift */; };
+		B539AECD2407565E00876CC7 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539AECC2407565E00876CC7 /* Array.swift */; };
 		B570230A24050A16004386F1 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B57022FE24050A16004386F1 /* SourceSansPro-BlackItalic.ttf */; };
 		B570230B24050A16004386F1 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B57022FF24050A16004386F1 /* SourceSansPro-Italic.ttf */; };
 		B570230C24050A16004386F1 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B570230024050A16004386F1 /* SourceSansPro-Regular.ttf */; };
@@ -106,6 +107,7 @@
 		B53165BF24011E0200B9257C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		B53165C324011ECD00B9257C /* JCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCollectionViewController.swift; sourceTree = "<group>"; };
 		B53165C62401287F00B9257C /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		B539AECC2407565E00876CC7 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		B57022FE24050A16004386F1 /* SourceSansPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackItalic.ttf"; sourceTree = "<group>"; };
 		B57022FF24050A16004386F1 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
 		B570230024050A16004386F1 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				B5A8C6D024063906002711DD /* UIFont.swift */,
 				B5A8C6CE240634CA002711DD /* UIImageView.swift */,
 				B5A8C6D624065195002711DD /* AbstractDiffCalculator.swift */,
+				B539AECC2407565E00876CC7 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				B53165962400E92B00B9257C /* HiPages.xcdatamodeld in Sources */,
 				B570231724050F53004386F1 /* UIView.swift in Sources */,
 				B53165C024011E0200B9257C /* TestViewController.swift in Sources */,
+				B539AECD2407565E00876CC7 /* Array.swift in Sources */,
 				B531658C2400E92B00B9257C /* AppDelegate.swift in Sources */,
 				B503A6D32404FF20001B008A /* TestViewModel.swift in Sources */,
 				B503A6C62404EC15001B008A /* DispatchQueue.swift in Sources */,

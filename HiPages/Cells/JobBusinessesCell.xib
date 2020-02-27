@@ -44,9 +44,6 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-Ya-uzo">
                                 <rect key="frame" x="0.0" y="50" width="355" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="ygg-qN-sES"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3T6-pL-DSr">
                                     <size key="itemSize" width="90" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -61,9 +58,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Krs-Ya-uzo" secondAttribute="trailing" id="09k-S9-leg"/>
                             <constraint firstAttribute="trailing" secondItem="9F6-HA-2LN" secondAttribute="trailing" id="1wo-Lg-qJR"/>
                             <constraint firstAttribute="bottom" secondItem="Krs-Ya-uzo" secondAttribute="bottom" constant="10" id="9wf-av-LVL"/>
                             <constraint firstItem="Krs-Ya-uzo" firstAttribute="top" secondItem="9F6-HA-2LN" secondAttribute="bottom" id="C8o-aA-MKx"/>
+                            <constraint firstItem="Krs-Ya-uzo" firstAttribute="leading" secondItem="N0f-vv-gVc" secondAttribute="leading" id="YjB-jd-SMV"/>
                             <constraint firstItem="9F6-HA-2LN" firstAttribute="leading" secondItem="N0f-vv-gVc" secondAttribute="leading" id="eCe-ch-SZQ"/>
                             <constraint firstItem="Krs-Ya-uzo" firstAttribute="centerX" secondItem="N0f-vv-gVc" secondAttribute="centerX" id="fKd-lb-reF"/>
                             <constraint firstItem="9F6-HA-2LN" firstAttribute="top" secondItem="N0f-vv-gVc" secondAttribute="top" id="qTn-D0-aDW"/>
@@ -80,7 +79,6 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="collectionView" destination="Krs-Ya-uzo" id="X9r-xa-cD7"/>
-                <outlet property="collectionViewWidthConstraint" destination="ygg-qN-sES" id="dIq-kK-tRv"/>
                 <outlet property="jobTitleLabel" destination="15C-wK-Hf2" id="5tn-Wx-eLi"/>
             </connections>
             <point key="canvasLocation" x="138.40579710144928" y="152.67857142857142"/>
