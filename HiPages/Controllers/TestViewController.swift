@@ -62,6 +62,7 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
     @IBOutlet
     private var closedJobsButton: UIButton?
     
+    private var refreshControl = UIRefreshControl()
     
     override var sectionsAndItems: Array<SectionAndItems> {
         
@@ -106,6 +107,15 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
     }
     
     // MARK: - Setup
+    
+    private func setupPullToRefresh() {
+        
+        self.refreshControl.attributedTitle = NSAttributedString(string: "")
+        
+        self.refreshControl.addTarget(self, action: #selector(onRefresh), for: UIControl.Event.valueChanged)
+        
+        self.collectionView?.refreshControl = self.refreshControl
+    }
     
     private func setupViewModel() {
         
@@ -153,6 +163,8 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+
+        self.setupPullToRefresh()
         
         self.toggleJobs(self.viewModel?.jobView == .inProgress ? self.openJobsButton : self.closedJobsButton)
         
@@ -167,7 +179,12 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
             
             if let cell = self.collectionView?.dequeueReusable(cell: JobTitleCell.self, for: indexPath) {
                 
-                return cell.prepare(job: job)
+                return cell.prepare(job: job) { [weak self] in
+                    
+                    self?.viewModel?.closeJob(job: job)
+                    
+                    self?.updateSectionsAndItems()
+                }
             }
         }
         else if case .avatars(let job) = item {
@@ -229,5 +246,13 @@ class TestViewController: JCollectionViewController<TestSection, TestItem> {
         // update jobs listing
         
         self.updateSectionsAndItems()
+    }
+    
+    @objc
+    func onRefresh() {
+        
+        self.viewModel?.getJobs()
+
+        self.refreshControl.endRefreshing()
     }
 }

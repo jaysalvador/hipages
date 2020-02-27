@@ -75,9 +75,42 @@
                                     <constraint firstItem="QHa-OI-7gG" firstAttribute="centerY" secondItem="vfc-h2-z1m" secondAttribute="centerY" id="yDE-LM-5t2"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nn-op-5zp">
+                                <rect key="frame" x="323" y="8" width="24" height="24"/>
+                                <state key="normal" image="icon24x24more"/>
+                                <connections>
+                                    <action selector="moreButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lfA-A7-bvt"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngf-us-X1f">
+                                <rect key="frame" x="292" y="32" width="55" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="23K-Qq-Vif"/>
+                                    <constraint firstAttribute="height" constant="30" id="vwS-jO-lqx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="14"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="35p-Ce-oVK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="2Nn-op-5zp" firstAttribute="top" secondItem="ctH-SR-DDf" secondAttribute="top" constant="8" id="1uV-PO-DOX"/>
+                            <constraint firstAttribute="trailing" secondItem="2Nn-op-5zp" secondAttribute="trailing" constant="8" id="Dbl-Rf-51G"/>
+                            <constraint firstItem="Ngf-us-X1f" firstAttribute="trailing" secondItem="2Nn-op-5zp" secondAttribute="trailing" id="GTr-KF-ZwB"/>
                             <constraint firstItem="vfc-h2-z1m" firstAttribute="leading" secondItem="ctH-SR-DDf" secondAttribute="leading" id="GdN-eh-8Za"/>
                             <constraint firstItem="vfc-h2-z1m" firstAttribute="top" secondItem="bnK-kj-AVC" secondAttribute="bottom" constant="20" id="HwF-JQ-Yre"/>
                             <constraint firstAttribute="bottom" secondItem="vfc-h2-z1m" secondAttribute="bottom" id="Jmo-dK-tgq"/>
@@ -85,6 +118,7 @@
                             <constraint firstItem="bnK-kj-AVC" firstAttribute="leading" secondItem="ctH-SR-DDf" secondAttribute="leading" id="Rbr-Ia-aZh"/>
                             <constraint firstItem="d7X-12-z61" firstAttribute="top" secondItem="ctH-SR-DDf" secondAttribute="top" constant="12" id="fwz-vX-GPu"/>
                             <constraint firstAttribute="trailing" secondItem="bnK-kj-AVC" secondAttribute="trailing" id="guc-rz-fEk"/>
+                            <constraint firstItem="Ngf-us-X1f" firstAttribute="top" secondItem="2Nn-op-5zp" secondAttribute="bottom" id="j69-tO-OC3"/>
                             <constraint firstAttribute="trailing" secondItem="d7X-12-z61" secondAttribute="trailing" id="jHS-wC-x4I"/>
                             <constraint firstItem="d7X-12-z61" firstAttribute="leading" secondItem="ctH-SR-DDf" secondAttribute="leading" id="oEG-cb-Kh5"/>
                             <constraint firstAttribute="trailing" secondItem="vfc-h2-z1m" secondAttribute="trailing" id="xdY-86-mEo"/>
@@ -101,11 +135,16 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="375" height="113"/>
             <connections>
+                <outlet property="closeButton" destination="Ngf-us-X1f" id="d8n-ox-5hw"/>
                 <outlet property="jobDateLabel" destination="bnK-kj-AVC" id="cr4-Fa-DZn"/>
                 <outlet property="jobStatusLabel" destination="RPJ-Sw-FDy" id="xj1-ox-lwx"/>
                 <outlet property="jobTitleLabel" destination="d7X-12-z61" id="0Nq-Dk-PG3"/>
+                <outlet property="moreButton" destination="2Nn-op-5zp" id="btJ-mx-QNR"/>
             </connections>
             <point key="canvasLocation" x="192.0289855072464" y="134.26339285714286"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="icon24x24more" width="24" height="24"/>
+    </resources>
 </document>

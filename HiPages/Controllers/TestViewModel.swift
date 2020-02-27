@@ -27,6 +27,8 @@ protocol TestViewModelProtocol{
     // MARK: - Functions
     
     func getJobs()
+    
+    func closeJob(job: Job)
 }
 
 class TestViewModel: TestViewModelProtocol {
@@ -78,5 +80,19 @@ class TestViewModel: TestViewModelProtocol {
                 self?.onError?()
             }
         }
+    }
+    
+    func closeJob(job: Job) {
+        
+        guard let index = self.jobs?.firstIndex(of: job) else {
+            
+            return
+        }
+        
+        var _job = job
+        
+        _job.status = .closed
+        
+        self.jobs?[index] = _job
     }
 }

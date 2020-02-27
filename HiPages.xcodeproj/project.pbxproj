@@ -283,16 +283,16 @@
 		B53165C52401286C00B9257C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B53165C62401287F00B9257C /* UICollectionView.swift */,
-				B503A6C52404EC15001B008A /* DispatchQueue.swift */,
-				B503A6C92404EF23001B008A /* URLSession.swift */,
+				B5A8C6D624065195002711DD /* AbstractDiffCalculator.swift */,
+				B539AECC2407565E00876CC7 /* Array.swift */,
 				B503A6CB2404EFCC001B008A /* DateFormatter.swift */,
-				B570231624050F53004386F1 /* UIView.swift */,
+				B503A6C52404EC15001B008A /* DispatchQueue.swift */,
+				B53165C62401287F00B9257C /* UICollectionView.swift */,
 				B5702318240510E7004386F1 /* UIColor.swift */,
 				B5A8C6D024063906002711DD /* UIFont.swift */,
 				B5A8C6CE240634CA002711DD /* UIImageView.swift */,
-				B5A8C6D624065195002711DD /* AbstractDiffCalculator.swift */,
-				B539AECC2407565E00876CC7 /* Array.swift */,
+				B570231624050F53004386F1 /* UIView.swift */,
+				B503A6C92404EF23001B008A /* URLSession.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
